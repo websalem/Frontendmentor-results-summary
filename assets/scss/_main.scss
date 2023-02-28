@@ -1,0 +1,148 @@
+main {
+    max-width: 400px;
+    font-family: $font-family;
+}
+
+.result,
+.summery {
+    padding: 2rem;
+}
+
+.result {
+    background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
+    color: $light-lavender;
+}
+
+.result h1,
+.result h2 {
+    color: $white;
+}
+
+.result .result-deg {
+    background-image: linear-gradient($violet-blue, $persian-blue);
+    width: 120px;
+    height: 120px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.result-deg h1 {
+    font-size: 3rem;
+}
+
+.result-deg p {
+    font-size: 1rem;
+}
+
+.result h2 {
+    margin-bottom: 1rem;
+}
+
+.summery {
+    background-color: $white;
+}
+
+.summery h2 {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.summery-deg {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: .75rem;
+    margin-bottom: 1rem;
+}
+
+.summery-deg p {
+    display: flex;
+    align-items: center;
+    font-size: .95rem;
+}
+
+.summery-deg .deg {
+    color: $dark-gray-blue;
+}
+
+.summery-deg .deg span {
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.summery-deg:nth-of-type(1) {
+    background-color: hsla(0, 100%, 67%, .075);
+    color: $light-red;
+}
+
+.summery-deg:nth-of-type(2) {
+    background-color: hsla(39, 100%, 56%, .075);
+    color: $orangey-yellow;
+}
+
+.summery-deg:nth-of-type(3) {
+    background-color: hsla(166, 100%, 37%, .075);
+    color: $green-teal;
+}
+
+.summery-deg:nth-of-type(4) {
+    background-color: hsla(234, 85%, 45%, .075);
+    color: $cobalt-blue;
+    margin-bottom: 1.5rem;
+}
+
+.summery-deg img {
+    display: inline;
+    margin-right: .5rem;
+}
+
+.btn {
+    border: none;
+    appearance: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: $white;
+    background-color: $dark-gray-blue;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $cobalt-blue;
+}
+
+@media screen and (min-width:768px) {
+    main {
+        max-width: 720px;
+        font-family: $font-family;
+        display: flex;
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2);
+        border-radius: 30px;
+    }
+
+    .result,
+    .summery {
+        padding: 2rem;
+        flex: 1;
+        border-radius: 30px;
+    }
+
+    .result {
+        background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-radius: 30px;
+        text-align: center;
+        color: $light-lavender;
+    }
+}
